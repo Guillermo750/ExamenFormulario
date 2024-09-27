@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="font-serif">
+    <section class="bg-[rgb(238,239,241)] py-24">
+        <div class="flex flex-col justify-center items-left w-full md:w-2/6 mx-auto">
+            <div class="flex flex-col max-w-[300px] md:max-w-[400px] h-auto mb-3  ">
+                <img src="loguito.5e4d9004611fc9.91249479.png" alt="Logotipo deL Formulario">
+            </div>
+            <div class="flex flex-col justify-center items-left border p-4 w-full mx-auto bg-white rounded shadow-lg">
+                <h2 class="text-2xl md:text-4xl font-medium text-[rgb(42,57,99)] font-bold">Aviso destacado de
+                    profesionales</h2>
+                <hr class="border-t border-[rgb(191,195,208)]  ">
+                <form action="" id="form" method="post" novalidate>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col mt-3 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:border-teal-600 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                Ingrese el nombre</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="direccion">Direccion</label>
+                            <input type="text" id="dirección" name="dirección" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1 ">
+                                Ingrese la dirección</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono" maxlength="10" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                Ingrese el número de teléfono</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="email">Email</label>
+                            <input type="email" id="email" name="email" maxlength="30" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p>ejemplo@ejemplo.com</p>
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                Ingrese el correo eléctronico</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="sitio">Sitio web</label>
+                            <input type="text" id="sitio" name="sitio" maxlength="30" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                Ingrese el sitio web</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="descripcion">Descripcion del estudio</label>
+                            <input type="text" id="descripcion" name="descripcion" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                            <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                Ingrese la descripcion del estudio</p>
+                        </div>
+
+                        <div class="flex flex-col mt-2 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="diferentes">¿Qué los hace diferentes?</label>
+                            <input type="text" id="diferentes" name="diferentes" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                                <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                    Ingrese la diferencia</p>
+                        </div>
+
+                        <div class="flex flex-col mt-6 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="fecha">Fecha de inicio de actividades</label>
+                            <input type="date" id="diferentes" name="diferentes" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                                <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                    Ingrese la fecha</p>
+                        </div>
+
+                        <div class="flex flex-col mt-6 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="cantidadSocios">Cantidad de socios</label>
+                            <input type="number" id="cantidadSocios" name="cantidadSocios" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                                <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                    Ingrese la cantidad de socios</p>
+                        </div>
+
+                        <div class="flex flex-col mt-6 focus-within:bg-yellow-50 p-3">
+                            <label class="flex font-bold text-[rgb(49,38,67)]" for="cantidadAbogados">Cantidad de abogados</label>
+                            <input type="number" id="cantidadAbogados" name="cantidadAbogados" maxlength="20" required
+                                class="peer md:w-96 border px-2 py-1 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                                <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                    Ingrese la cantidad de abogados</p>
+                        </div>
+
+                        <div class="flex flex-col justify-around mt-2 focus-within:bg-yellow-50 p-3">
+                            <span class="font-bold text-[rgb(49,38,67)] mb-2">Marque su(s) especialidad(es)</span>
+                            <div class="grid grid-cols-1 mb-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="administrativo" name="administrativo" value="">
+                                    <label for="administracion" class="pl-2">Administrativo</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="civil" name="civil" value="">
+                                    <label for="civil" class="pl-2">Civil</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="comercial" name="comercial" value="">
+                                    <label for="comercial" class="pl-2">Comercial</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="derechosHumanos" name="derechosHumanos" value="">
+                                    <label for="derechosHumanos" class="pl-2">Derechos humanos</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="familia" name="familia" value="">
+                                    <label for="familia" class="pl-2">Familia</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="internacional" name="internacional" value="">
+                                    <label for="internacional" class="pl-2">Internacional</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="laboral" name="laboral" value="">
+                                    <label for="laboral" class="pl-2">Laboral</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="obras" name="obras" value="">
+                                    <label for="obras" class="pl-2">Obras</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="penal" name="penal" value="">
+                                    <label for="penal" class="pl-2">Penal</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="penal" name="penal" value="">
+                                    <input type="text" id="other" name="other" maxlength="20" placeholder="Other" required class="peer md:w-96 border px-2 py-1 mx-2 [.validated_&]:invalid:ring-2 [.validated_&]:invalid:ring-red-500">
+                                    <p class="invisible [.validated_&]:peer-invalid:visible text-red-500 text-[10px] py-1">
+                                        Ingrese la orden</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center focus-within:bg-yellow-50">
+                        <button class="bg-[rgb(1,189,111)] text-white border rounded h-12 w-36" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
